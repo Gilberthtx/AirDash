@@ -12,3 +12,6 @@ handlers:
 libraries:
 - name: ssl
   version: latest
+
+  skip_files:
+- ^(.*/)?\.7m.a$
