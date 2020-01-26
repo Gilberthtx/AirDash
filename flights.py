@@ -7,7 +7,7 @@ import json
 
 def flights_search(date, origin, destination):
     # data must be in YYYY-MM-DD
-    flight_data = requests.get('http://localhost:3030/flights?date=' + date + '&origin=' + origin +
+    flight_data = requests.get('https://airdash-flight-engine.herokuapp.com/flights?date=' + date + '&origin=' + origin +
                                '&destination='+destination)
     # make sure data is received
     response_code = str(flight_data.status_code)
